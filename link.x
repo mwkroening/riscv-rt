@@ -66,7 +66,7 @@ SECTIONS
   .bss (NOLOAD) :
   {
     _sbss = .;
-    *(.sbss .sbss.* .bss .bss.*);
+    *(.tbss .tbss.* .sbss .sbss.* .bss .bss.*);
     . = ALIGN(4);
     _ebss = .;
   } > REGION_BSS
